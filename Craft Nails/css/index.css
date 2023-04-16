@@ -1,0 +1,142 @@
+body {
+	background: #f8f9fa;
+}
+
+.home-slider {
+	height: calc(100vh - 80px);
+	/*margin-top: 80px;*/
+}
+
+.home-slider .content {
+	display: flex;
+	flex-direction: column;
+	height: calc(100vh - 80px);
+	justify-content: center;
+	margin-left: 2em;
+	padding-bottom: 8em;
+	position: absolute;
+	top: 0;
+	width: 50%;
+	z-index: 2;
+}
+
+.home-slider .content .title {
+	color: #1b1b1b;
+	font-size: 3.4em;
+	line-height: 1.5em;
+}
+
+.home-slider .content .subtitle.active {
+	opacity: 1;
+}
+
+.home-slider .content .subtitle {
+	font-size: 1.2em;
+	opacity: 0;
+	position: absolute;
+	width: 50%;
+}
+
+.home-slider .slides {
+	display: flex;
+	height: calc(100vh - 80px);
+	justify-content: flex-end;
+	width: 100%;
+}
+
+.home-slider .slides .slide-wrapper {
+	height: calc(100vh - 80px);
+	position: absolute;
+	right: 0;
+	width: 70%;
+}
+
+.home-slider .slides .slide-wrapper .slide.active {
+	opacity: 1;
+	transition-duration: .5s;
+}
+
+.home-slider .slides .slide-wrapper .slide {
+	height: calc(100vh - 56px);
+	-o-object-fit: cover;
+	object-fit: cover;
+	opacity: 0;
+	position: absolute;
+	transition-duration: .5s;
+	width: 100%;
+}
+
+.home-slider .slides .slide-wrapper .next-wrapper {
+	bottom: 3em;
+	cursor: pointer;
+	height: 200px;
+	left: -130px;
+	position: absolute;
+	width: 200px;
+	z-index: 3;
+}
+
+.home-slider .slides .slide-wrapper .next-wrapper .next-slide {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	opacity: 0;
+	position: absolute;
+	transition-duration: .5s;
+	width: 100%;
+}
+
+.home-slider .slides .slide-wrapper .next-wrapper .next-slide.active {
+	opacity: 1;
+	transition-duration: .5s;
+}
+
+.home-slider .slides .slide-wrapper .next-wrapper .next-slide {
+	height: 100%;
+	-o-object-fit: cover;
+	object-fit: cover;
+	opacity: 0;
+	position: absolute;
+	transition-duration: .5s;
+	width: 100%;
+}
+
+.home-slider .slides .slide-wrapper .next-wrapper .next-button {
+	-webkit-backdrop-filter: blur(10px);
+	backdrop-filter: blur(10px);
+	background: hsla(0,0%,100%,.22);
+	border: none;
+	bottom: -1px;
+	color: #fff;
+	padding: 0.4em 1.1em;
+	position: absolute;
+	right: 0;
+}
+
+.home-slider .slides .dots {
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	margin-right: 1em;
+	z-index: 1;
+}
+
+.home-slider .slides .dots .dot.active {
+	height: 15px;
+	opacity: 1;
+	width: 15px;
+}
+
+.home-slider .slides .dots .dot {
+	background: #fff;
+	border-radius: 50rem;
+	height: 8px;
+	margin-bottom: 2em;
+	opacity: .48;
+	width: 8px;
+}
+
+.navbar {
+	z-index: 10;
+}
